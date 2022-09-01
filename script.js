@@ -6,6 +6,7 @@ let email = document.querySelector('#email')
 let password = document.querySelector('#password')
 let conPassword = document.querySelector('#conPassword')
 let phone = document.querySelector('#phone')
+let date = document.querySelector('#date')
 // let fNamelable = document.querySelector('.fNamelable')
 let validEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
@@ -57,7 +58,14 @@ function validation() {
 
    }else if ( conPassword.value !== password.value){
    
-       warning.innerHTML = ' The password must be identical  '
+    warning.innerHTML = ' The password must be identical  '
+    warning.style.color = "red"
+    return false
+    
+
+   }else if ( date.value === ""){
+   
+       warning.innerHTML = '  chose your Birthdate  '
        warning.style.color = "red"
        return false
    
