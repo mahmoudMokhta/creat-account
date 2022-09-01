@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body> 
+
+    <div class="container">
+      <h1>Creat Account</h1>
+      
+      <form action="dd.html" onsubmit="return validation()">
+        <h3 class="warning"></h3>
+        <div class="control-form">
+          <label for="fName" class="fNamelable"> First Name :</label>
+          <input type="text" name="" id="fName" placeholder="write your first name" title="write your first name not more than 15 character" />
+        </div>
+        <div class="control-form">
+          <label for="LName" class="LNamelable"> Last Name :</label>
+          <input type="text" name="" id="LName" placeholder="write your last name" title="write your last name" />
+        </div>
+        <div class="control-form">
+          <label for="email" class=""> your Email :</label>
+          <input type="text" name="" id="email" placeholder="write your email" title="write your email" />
+        </div>
+        <div class="control-form">
+          <label for="phone" class=""> phone number :</label>
+          <input type="text" name="" id="phone" placeholder="01xxxxxx" title="01xxxxxx"/>
+        </div>
+        <div class="control-form">
+          <label for="email" class=""> your password :</label>
+          <input type="text" name="" id="password" placeholder="write your password" title="write your password not more than 15 character and not less 5 character"/>
+        </div>
+
+        <div class="control-form">
+          <label for="email" class=""> confirm password :</label>
+          <input type="password" name="" id="conPassword" placeholder="write the password again" title="" />
+        </div>
+        <div class="control-form">
+          <label for="" class="">Gender :</label>
+          <label for="male" class="">Male :</label>
+          <input type="radio" name="Gender" id="male" />
+          <label for="female" class=""> Female :</label>
+          <input type="radio" name="Gender" id="female" />
+        </div>
+        <div class="control-form">
+          <label for="female" class=""> Birthdate :</label>
+          <input type="date" title="" />
+        </div>
+
+        <div class="control-form btn">
+          <input type="submit" value="submit" class="" />
+          <input type="reset" value="reset"  class="" />
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
