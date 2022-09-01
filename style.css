@@ -20,6 +20,7 @@ form{
     width: 25rem;
     height: 50%;
     border-radius: 10px;
+    box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.555)
 }
 .warning{
     text-align: center;
@@ -36,6 +37,12 @@ label {
 input{
     border: 1px solid white;
     border-radius: 5px;
+    outline: none;
+}
+input:focus{
+
+    box-shadow: 0 0 4px 3px  rgba(3, 7, 14, 0.555)
+    
 }
 .btn{
     display: flex;
